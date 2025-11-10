@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(242, 222, 217);
+}
+h1,article{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: green;
+}
+article p:first-child{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+article p:last-child{
+    font-size: 18px;
+    color: black;
+    font-weight: mediun;
+    font-style: oblique;
+}
+/* styling the nth-child of a paragraph */
+li:nth-child(1), :nth-child(8){
+    text-decoration: underline;
+    font-size: 18.5px;
+}
+/* styling all list items(li)s that are odd and the even ones separately so that we can differentiate it */
+li:nth-child(odd){
+    background-color: black;
+}
+li:nth-child(even){
+    background-color: green;
+}
+/* adding style using the nth-of-type, inverts the information and 
+naming of the children as 1 becomes 14 and vice versa */
+li:nth-last-of-type(14){
+    text-transform: uppercase;
+}
+li:nth-child(2n+1){
+    color: orange;
+}
