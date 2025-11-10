@@ -1,0 +1,72 @@
+/* Application of cascade rule in css as the file follows the code from the top to the bottom */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(1, 165, 1);
+    background-color: rgb(241, 241, 201);
+}
+h1{
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*importing a font from an online source like "www.fontsquirrel.fonts" and using it and text decoration */
+@font-face{
+    font-family: ChuckFiveRegular;
+    src: url('fonts/chunkfive.eot');
+}
+h1.intro{
+    font-family: ChunkFiveRegular,Cambria;
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgb(3, 201, 201);
+}
+/*here we see how to change the format of your letters from lower-case to upper case and capitalize */
+.credits{
+    font-weight: bold;
+    font-style:italic;
+    text-transform: capitalize;
+    text-indent: 50px;
+}
+/* line-height is the distance between one text from another like distance between two lines and also letter-spacing*/
+p{
+    line-height: 1.4em;
+    color: orangered;
+    letter-spacing: 0.2em;
+}
+/* this is the effect of word spacing, it makes the words of the paragraph have enough space between them*/
+p.additional{
+    word-spacing: 1em;
+    color: rgb(160, 210, 237);
+    text-align: center;
+}
+#important{
+    color: olivedrab;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+#shadow{
+    background-color: #f1dcdc;
+    color: #aca9a9;
+    text-shadow: 1px, 1px, 0px, #000000;
+}
+/* Dropcapping and pseudo elements*/
+p#important::first-letter{
+font-size: 200%;
+}
+p#shadow::first-line{
+    font-weight: bold;
+}
+/* Adding hover, active and other pseudo elements*/
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: deeppink;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+    color: rgb(255, 180, 192);
+}
