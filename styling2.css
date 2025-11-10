@@ -1,0 +1,63 @@
+body{
+    padding: 20px;
+    background-color: rgb(55, 55, 214);
+    color: white;
+}
+/*adding style to all paragraphs with a class attribute*/
+p[class]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: black;
+
+}
+/* adding style to a paragraph with a class whose attribute is "prog" */
+p[class="prog"]{
+    color: chartreuse;
+    font-weight: bold;
+
+}
+/* adding style to a paragraph whose class has more than one attribute but you are targeting one called "coding" */
+p[class~="coding"]{
+    color:cyan;
+    font-weight: bolder;
+}
+/* adding style to paragraphs with a class whose value start the letter "i" */
+p[class^="i"]{
+   text-transform: none;
+   text-decoration: underline;
+   font-family: 'Times New Roman', Times, serif;
+}
+/* adding style to a paragraph with a class whose value has the letter ng */
+p[class*="ng"]{
+    font-size: medium;
+    font-style: italic;
+    color: darkturquoise;
+}
+/* adding style to paragraphs with a class whose value ends with a letter "c" */
+p[class$="c"]{
+    color: darkorange;
+    text-decoration: wavy;
+}
+/* adding style to the form elements and all that using the pseudo elements */
+input{
+    padding: 6px 12px 6px 12px;
+    border: 2px solid #665544;
+    color:black;
+}
+input.btn-submit{
+    background-color: #665544;
+    color: #cccccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input.btn-submit:hover{
+    background-color: #8a6f5e;
+}
+input.btn-submit:active{
+    background-color: chocolate;
+}
+input[type="text"]:focus{
+    color: #665544;
+    outline: none;
+    border-color: #8a6f5e;
+}
