@@ -1,0 +1,20 @@
+.button{
+    display: block;
+    width:   100px;
+    padding: 4px;
+    border: 2px solid #77aaaa;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #aadddd;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(top,#aadddd 0%, #77aaaa 100% );
+    background: -moz-linear-gradient(top,#aadddd 0%, #77aaaa 100% );
+}
+.button:hover{
+    background: -webkit-linear-gradient(bottom,#aadddd 0%, #77aaaa 100% );
+    background: -moz-linear-gradient(bottom,#aadddd 0%, #77aaaa 100% );
+}   

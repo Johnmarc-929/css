@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Shadow Example</title>
+<style>
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.card {
+  background: white;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  /* Older browser support (historical) */
+  -moz-box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+
+  /* Modern standard */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card.inset {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+<body>
+  <div class="card">
+    Normal Box Shadow
+  </div>
+  <br>
+  <div class="card inset">
+    Inset Shadow
+  </div>
+</body>
+</html>

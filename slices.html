@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Image Example</title>
+        <style>
+            .box {
+            width: 250px;
+            height: 150px;
+            border: 20px solid transparent; /* Needed for border-image to appear */
+            
+            /* Modern syntax */
+            border-image-source: url('https://thumbs.dreamstime.com/b/vector-transparent-checkerboard-pattern-background-illustration-134543437.jpg?w=768');
+            border-image-slice: 30; /* 30 pixels from each side of the image */
+            border-image-width: 20px;
+            border-image-repeat: stretch; /* can also be repeat or round */
+
+            /* Older Firefox syntax (no longer required) */
+            -moz-border-image: url('https://thumbs.dreamstime.com/b/vector-transparent-checkerboard-pattern-background-illustration-134543437.jpg?w=768') 30 stretch;
+            }
+
+            .box-repeat {
+            width: 250px;
+            height: 150px;
+            border: 20px solid transparent;
+            border-image: url('https://thumbs.dreamstime.com/b/vector-transparent-checkerboard-pattern-background-illustration-134543437.jpg?w=768') 30 repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Stretch Border Image</div>
+        <br>
+        <div class="box-repeat">Repeat Border Image</div>
+    </body>
+</html>
