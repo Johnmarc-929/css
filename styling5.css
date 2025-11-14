@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(70, 72, 72);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin: 0px;
+    color: black;
+}
+div.Main-content{
+    width: 980px;
+    margin: 0 auto;
+    background-color: darkgray;
+    background-image: url(/lists/html5.png.png);
+    background-size: 60px;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+
+}
+.main-navigation ul{
+    padding: 10px;
+    background-color: rgba(201, 201, 197, 0.305);
+    list-style-type: none;
+    text-align: right;
+}
+.main-navigation li{
+    display: inline-block;
+    margin-left: 8px;
+}
+.main-navigation a{
+    text-decoration: none;
+    color: rgb(87, 20, 220);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px;
+}
+a.currents{
+    background-color: cadetblue;
+    border: 2px solid rgb(208, 204, 204);
+    border-radius: 10px;
+}
+.main-navigation a:hover{
+    background-color: purple;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.main-navigation a:active{
+    color: red;
+}
+img{
+    width: 100%;
+    height: 500px;
+}
+h1{
+    margin: 10px;
+    text-transform: capitalize;
+    background-color: rgb(157, 156, 156);
+    border-radius: 10px;
+    font-size: 18.5px;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+}
+div.others{
+    margin: 10px;
+    padding: 8px;
+    color: white;
+    background-color:  rgb(157, 156, 156);
+    border-radius: 10px;
+}
+div.others h2{
+    text-transform: capitalize;
+    text-align: left;
+}
+form#subscription{
+    margin: 10px;
+    color: white;
+    font-size: 17px;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(157, 156, 156);
+    background-color: rgb(222, 184, 135);
+    display: inline-block;
+}
+div#link a{
+    text-decoration: none;
+    color: aquamarine;
+}
