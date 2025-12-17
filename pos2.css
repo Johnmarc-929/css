@@ -1,0 +1,11 @@
+body{
+    font-family: helvetica;
+    max-width: 960px;
+}
+.content{
+    background: #ccc;
+    display: block;
+    padding: 10px;
+    clear: both;
+    margin-top: 50px;
+}

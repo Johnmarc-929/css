@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    font-family: helvetica;
+    font-size: 17px;
+    /*background: #888;*/
+}
+.wrapper{
+    background: #fff;
+    padding: 20px;
+    max-width: 980px;
+}
+img{
+    float: left;
+    width: 150px;
+    margin: 10px;
+}
+/*floating block elements*/
+.box{
+    background:#fff;
+    height: 100px;
+    margin: 10px;
+    color: #fff;
+}
+.blue{
+    background: blue;
+    width: 100px;
+    float: right;
+}
+.red{
+    background: red;
+    width: 100px;
+    float: right;
+}
+.green{
+    background: green;
+    width: 100px;
+    float: right;
+}
+div h1{
+    font-size: 18px;
+}
+.services h1, .services p{
+    color: #777;
+    text-align: center;
+    margin: 10px auto;
+}
+.services{
+    float: left;
+    margin:5px;
+    background:#999;
+    padding: 1%;
+    width: 20%;
+    height: 130px;
+}

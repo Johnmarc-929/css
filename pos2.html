@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8"/>
+        <neta name="viewport" content="width=devie-width, initial-scale=1.0"/>
+        <title>Clearing floats</title>
+        <style>
+            
+            .services h1, .services p{
+                color: #777;
+                text-align: center;
+                margin: 10px auto;
+            }
+            .services{
+                float: left;
+                margin:1%;
+                background:#999;
+                padding: 1%;
+                width: 29%;
+                height: 130px;
+            }
+            .services:after{
+                display : block;
+                clear: both;
+                content:"";
+            }
+        </style>
+        <link rel="stylesheet" href="pos2.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="services">
+            <h1> Service One</h1>
+            <p>This about sharing.</p>
+
+        </div>
+        <div class="services">
+            <h1> Service One</h1>
+            <p>This about sharing.</p>
+
+        </div>
+        <div class="services">
+            <h1> Service One</h1>
+            <p>This about sharing.</p>
+
+        </div>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur recusandae dolorum totam odio neque quo excepturi nostrum quam. Totam nisi vel modi explicabo iste dolor officia adipisci earum aspernatur magnam!</p>
+        </div>
+    </body>
+</html>
