@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.grass, .sky, .road{
+    position: relative;
+}
+.sky{
+    height: 40%;
+    background: skyblue;
+}
+.grass{
+    height: 30%;
+    background: seagreen;
+}
+.road{
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+.line{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.mario{
+    position: absolute;
+    top: -55%;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;/*cubic-bezier(1, 0, 0, 1); you can use the cubic bezier for a specific out, 
+                                    you can check out their website called cubic-bezier otherwise, you can use the standard values*/
+}
+.luigi{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes drive{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(1500px);
+    }
+}

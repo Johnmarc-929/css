@@ -1,0 +1,13 @@
+body{
+    background: lightblue;
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* using the transform property and all its values */
+img{
+    transform: rotateZ(90deg) translateX(200px) scale(1.5);
+}
